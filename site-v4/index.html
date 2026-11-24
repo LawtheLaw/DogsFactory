@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dog's Factory · Crèche, pension et éducation canine à Braine-l'Alleud</title>
+<meta name="description" content="Crèche, pension et éducation canine à Braine-l'Alleud. 700 m² pour jouer, une équipe d'éducateurs et un comportementaliste.">
+<meta name="theme-color" content="#4676F6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="Dog's Factory, accueil"><img src="https://www.dogs-factory.be/public/assets/gifs/logo.png" alt="Dog's Factory" width="149" height="94"></a>
+  <nav class="nav-links" aria-label="Navigation principale">
+    <a href="#services">Services</a>
+    <a href="#visite">Première visite</a>
+    <a href="#avis">Avis</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-yellow nav-cta" href="#contact">Prendre rendez-vous</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><b class="sr">Menu</b></button>
+</header>
+
+<div class="bar" id="bar" inert>
+  <a class="bar-mark" href="#top">Dog's Factory</a>
+  <nav class="bar-links" aria-label="Navigation">
+    <a href="#services">Services</a>
+    <a href="#visite">Première visite</a>
+    <a href="#avis">Avis</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-ink bar-cta" href="#contact">Prendre rendez-vous</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><b class="sr">Menu</b></button>
+</div>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="#services">Services</a>
+    <a href="#visite">Première visite</a>
+    <a href="#avis">Avis</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="menu-tel" href="tel:+3225801356">02 580 13 56</a>
+</div>
+
+<main id="main">
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero" id="top">
+  <h1 class="hero-title"><span class="ln"><span>Dog's</span></span><span class="ln"><span>Factory</span></span></h1>
+
+  <div class="dogs" id="dogs" aria-hidden="true">
+    <!-- La vidéo ne se lit pas : la position horizontale du curseur choisit l'image.
+         data-start = chiens tout à gauche · data-front = de face (repos) · data-end = tout à droite (en secondes) -->
+    <canvas id="dogs-canvas" width="960" height="960"></canvas>
+    <video id="dogs-video" src="img/chiens.mp4" data-start="4.2" data-front="5.1" data-end="7.0" muted playsinline preload="auto" hidden></video>
+  </div>
+  <p class="hero-kicker">Crèche · Pension · Éducation canine — Braine-l'Alleud</p>
+</section>
+
+<!-- ═════════ LE CENTRE ═════════ -->
+<!-- Emplacements photo : remplacer le <span> d'un bloc .ph par <img src="…" alt="…"> (l'image remplit le cadre). -->
+<section class="intro" id="centre">
+  <div class="wrap">
+    <div class="g">
+      <p class="label"><b>01</b>Le centre</p>
+      <h2 class="statement" data-r>Ici, les chiens ne viennent pas attendre. Ils viennent <em>courir</em>, <em>jouer</em> et <em>apprendre</em>.</h2>
+    </div>
+    <div class="g intro-media">
+      <div class="ph intro-ph" style="--ar:16/10" data-r><span>Photo · les chiens en plein jeu</span></div>
+      <div class="intro-side" data-r>
+        <p>Henrique, comportementaliste, et son équipe d'éducateurs accueillent votre chien à la journée, pour un séjour ou pour un cours. 700&nbsp;m² rien que pour eux, à Braine-l'Alleud.</p>
+        <a class="link" href="#visite">Voir comment se passe la première visite</a>
+        <div class="ph" style="--ar:4/5"><span>Photo · Henrique et l'équipe</span></div>
+      </div>
+    </div>
+    <dl class="facts g">
+      <div data-r><dt>700<small>m²</small></dt><dd>d'espace pour courir et jouer</dd></div>
+      <div data-r><dt>7<small>j/7</small></dt><dd>la pension reste ouverte toute la semaine</dd></div>
+      <div data-r><dt>1<small>h</small></dt><dd>de test de sociabilité, au minimum, pour chaque chien</dd></div>
+      <div data-r><dt>0<small>€</small></dt><dd>le parking, juste devant le centre</dd></div>
+    </dl>
+  </div>
+</section>
+
+<div class="run" aria-hidden="true"><p id="run">Courir<i></i>Jouer<i></i>Apprendre<i></i>Courir<i></i>Jouer<i></i>Apprendre</p></div>
+
+<!-- ═════════ SERVICES ═════════ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <header class="head g">
+      <p class="label"><b>02</b>Les services</p>
+      <h2 class="h2">Quatre façons de passer une bonne journée</h2>
+    </header>
+
+    <div class="svcs" id="svcs">
+      <article class="svc is-open">
+        <h3><button class="svc-head" type="button" aria-expanded="true" aria-controls="svc-1" id="svc-h1"><span class="svc-n">01</span><span class="svc-name">Crèche</span><span class="svc-from">29&nbsp;€ la journée</span><span class="svc-x" aria-hidden="true"></span></button></h3>
+        <div class="svc-body" id="svc-1" role="region" aria-labelledby="svc-h1"><div class="svc-in g">
+          <div class="svc-text">
+            <p>Du lundi au vendredi, à l'heure ou à la journée. Votre chien joue pendant que vous travaillez.</p>
+            <ul class="lines">
+              <li><span>1 heure</span><b>10&nbsp;€</b></li>
+              <li><span>Demi-journée (6&nbsp;h max.)</span><b>19&nbsp;€</b></li>
+              <li><span>Journée complète</span><b>29&nbsp;€</b></li>
+              <li><span>Crèche éducative</span><b>60&nbsp;€</b></li>
+              <li class="note">Dépôt et reprise&nbsp;: 7h–10h, 12h–13h et 16h–18h.</li>
+            </ul>
+          </div>
+          <div class="ph svc-ph" style="--ar:4/3"><span>Photo · la crèche</span></div>
+        </div></div>
+      </article>
+
+      <article class="svc">
+        <h3><button class="svc-head" type="button" aria-expanded="false" aria-controls="svc-2" id="svc-h2"><span class="svc-n">02</span><span class="svc-name">Pension</span><span class="svc-from">32&nbsp;€ les 24&nbsp;h</span><span class="svc-x" aria-hidden="true"></span></button></h3>
+        <div class="svc-body" id="svc-2" role="region" aria-labelledby="svc-h2"><div class="svc-in g">
+          <div class="svc-text">
+            <p>7 jours sur 7, pendant vos vacances ou vos travaux. À manger, un lit au chaud et des compagnons de jeu.</p>
+            <ul class="lines">
+              <li><span>Pension</span><b>32&nbsp;€ / 24&nbsp;h</b></li>
+              <li><span>Chauffage, du 1<sup>er</sup> nov. au 31 mars</span><b>+3&nbsp;€ / jour</b></li>
+              <li><span>Pension éducative</span><b>60&nbsp;€ / jour</b></li>
+              <li class="note">Le séjour se règle dans les 5 jours après la réservation. Remboursable sur attestation du vétérinaire.</li>
+            </ul>
+          </div>
+          <div class="ph svc-ph" style="--ar:4/3"><span>Photo · la pension</span></div>
+        </div></div>
+      </article>
+
+      <article class="svc">
+        <h3><button class="svc-head" type="button" aria-expanded="false" aria-controls="svc-3" id="svc-h3"><span class="svc-n">03</span><span class="svc-name">Cours</span><span class="svc-from">17&nbsp;€ le cours collectif</span><span class="svc-x" aria-hidden="true"></span></button></h3>
+        <div class="svc-body" id="svc-3" role="region" aria-labelledby="svc-h3"><div class="svc-in g">
+          <div class="svc-text">
+            <p>En groupe le week-end, ou seul avec un éducateur. Chiots et adultes ont chacun leur heure.</p>
+            <ul class="lines">
+              <li><span>Chiots, sam. et dim.</span><b>9h–10h · 10h–11h</b></li>
+              <li><span>Adultes, sam. et dim.</span><b>11h–12h</b></li>
+              <li><span>Cours individuel</span><b>70&nbsp;€ / h</b></li>
+              <li><span>Forfait 10 cours individuels</span><b>550&nbsp;€</b></li>
+              <li class="note">Aussi à domicile le week-end&nbsp;: 70&nbsp;€ l'heure, plus le déplacement.</li>
+            </ul>
+          </div>
+          <div class="ph svc-ph" style="--ar:4/3"><span>Photo · un cours collectif</span></div>
+        </div></div>
+      </article>
+
+      <article class="svc">
+        <h3><button class="svc-head" type="button" aria-expanded="false" aria-controls="svc-4" id="svc-h4"><span class="svc-n">04</span><span class="svc-name">Comportement</span><span class="svc-from">55&nbsp;€ le cours</span><span class="svc-x" aria-hidden="true"></span></button></h3>
+        <div class="svc-body" id="svc-4" role="region" aria-labelledby="svc-h4"><div class="svc-in g">
+          <div class="svc-text">
+            <p>Pour les chiens qui ont du mal avec les autres. Henrique, comportementaliste, observe votre chien et vous explique ce qu'il voit.</p>
+            <ul class="lines">
+              <li><span>Resociabilisation</span><b>5 cours d'1&nbsp;h&nbsp;30</b></li>
+              <li><span>Par cours</span><b>55&nbsp;€</b></li>
+              <li class="note">Et aussi&nbsp;: le parc (mercredi 10h–18h, samedi 12h–18h, 5&nbsp;€ l'heure), l'agility le mercredi de 18h30 à 19h30, et le toilettage sur demande.</li>
+            </ul>
+          </div>
+          <div class="ph svc-ph" style="--ar:4/3"><span>Photo · Henrique au travail</span></div>
+        </div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PREMIÈRE VISITE ═════════ -->
+<section class="visit" id="visite">
+  <div class="wrap g">
+    <div class="visit-side">
+      <p class="label"><b>03</b>Comment ça se passe</p>
+      <h2 class="h2">La première visite</h2>
+      <div class="ph ph-dark" style="--ar:4/3"><span>Photo · l'accueil d'un nouveau chien</span></div>
+    </div>
+    <ol class="steps">
+      <li data-r><span class="step-n" aria-hidden="true">1</span>
+        <div><h3>On fait connaissance</h3>
+        <p>Vous nous parlez de votre chien&nbsp;: ses goûts, son caractère, son alimentation. L'inscription coûte 30&nbsp;€, plus 5&nbsp;€ par chien supplémentaire de la même famille.</p></div></li>
+      <li data-r><span class="step-n" aria-hidden="true">2</span>
+        <div><h3>Le test de sociabilité</h3>
+        <p>Il dure au moins une heure, pour tous les chiens. Les mâles de plus d'un an doivent être castrés, et les chiennes restent à la maison pendant leurs chaleurs.</p></div></li>
+      <li data-r><span class="step-n" aria-hidden="true">3</span>
+        <div><h3>Place au jeu</h3>
+        <p>Crèche, pension ou cours&nbsp;: votre chien retrouve ses compagnons de jeu, avec l'équipe à ses côtés.</p>
+        <a class="btn btn-yellow" href="#contact">Prendre rendez-vous</a></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═════════ AVIS ═════════ -->
+<section class="reviews" id="avis">
+  <div class="wrap">
+    <header class="head g">
+      <p class="label"><b>04</b>Avis Google</p>
+      <h2 class="h2">Ce qu'en disent les maîtres</h2>
+    </header>
+    <div class="g">
+      <ol class="rv-names" id="rv-names"></ol>
+      <div class="rv-main">
+        <figure class="rv" id="rv" aria-live="polite"><blockquote></blockquote><figcaption></figcaption></figure>
+        <div class="rv-nav">
+          <button type="button" id="rv-prev" aria-label="Avis précédent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+          <span id="rv-count">1 / 8</span>
+          <button type="button" id="rv-next" aria-label="Avis suivant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ TARIFS ═════════ -->
+<section class="prices" id="tarifs">
+  <div class="wrap">
+    <header class="head g">
+      <p class="label"><b>05</b>Tarifs</p>
+      <h2 class="h2">Tous les prix, sans surprise</h2>
+    </header>
+    <div class="carte">
+      <section><h3>Crèche</h3><dl>
+        <div><dt>1 heure</dt><dd>10&nbsp;€</dd></div>
+        <div><dt>Demi-journée <small>6&nbsp;h max.</small></dt><dd>19&nbsp;€</dd></div>
+        <div><dt>Journée complète</dt><dd>29&nbsp;€</dd></div>
+        <div><dt>Crèche éducative</dt><dd>60&nbsp;€</dd></div>
+      </dl></section>
+      <section><h3>Pension</h3><dl>
+        <div><dt>Pension <small>par 24&nbsp;h</small></dt><dd>32&nbsp;€</dd></div>
+        <div><dt>Chauffage <small>du 1<sup>er</sup> novembre au 31 mars, par jour</small></dt><dd>+3&nbsp;€</dd></div>
+        <div><dt>Pension éducative <small>par jour</small></dt><dd>60&nbsp;€</dd></div>
+        <div><dt>Soins spécifiques</dt><dd>5&nbsp;€</dd></div>
+      </dl></section>
+      <section><h3>Cours</h3><dl>
+        <div><dt>Cours collectif <small>samedi et dimanche</small></dt><dd>17&nbsp;€</dd></div>
+        <div><dt>Cours individuel <small>par heure</small></dt><dd>70&nbsp;€</dd></div>
+        <div><dt>Forfait 10 cours individuels <small>55&nbsp;€ le cours</small></dt><dd>550&nbsp;€</dd></div>
+        <div><dt>Cours à domicile <small>le week-end, par heure, plus le déplacement</small></dt><dd>70&nbsp;€</dd></div>
+        <div><dt>Resociabilisation <small>5 cours d'1&nbsp;h&nbsp;30, par cours</small></dt><dd>55&nbsp;€</dd></div>
+      </dl></section>
+      <section><h3>Abonnements</h3><dl>
+        <div><dt>10 demi-journées de crèche</dt><dd>171&nbsp;€</dd></div>
+        <div><dt>10 journées complètes de crèche</dt><dd>261&nbsp;€</dd></div>
+        <div><dt>10 cours collectifs</dt><dd>153&nbsp;€</dd></div>
+      </dl><p class="carte-note">Les abonnements sont valables un an après l'achat.</p></section>
+      <section><h3>Et aussi</h3><dl>
+        <div><dt>Première visite <small>inscription</small></dt><dd>30&nbsp;€</dd></div>
+        <div><dt>Chien supplémentaire <small>de la même famille</small></dt><dd>+5&nbsp;€</dd></div>
+        <div><dt>Parc <small>mercredi 10h–18h, samedi 12h–18h, par heure</small></dt><dd>5&nbsp;€</dd></div>
+      </dl></section>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONTACT ═════════ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="g">
+      <p class="label"><b>06</b>Contact</p>
+      <h2 class="statement">On vous attend à Braine-l'Alleud.</h2>
+    </div>
+    <a class="ct-tel" href="tel:+3225801356">02 580 13 56</a>
+    <div class="g ct">
+      <div class="ct-main">
+        <a class="ct-mail" href="mailto:info@dogs-factory.be">info@dogs-factory.be</a>
+        <address>9, avenue de l'Artisanat<br>1420 Braine-l'Alleud<br>Parking gratuit devant</address>
+        <a class="btn btn-yellow" href="https://www.google.com/maps/search/?api=1&query=Dog%27s+Factory+9+avenue+de+l%27Artisanat+1420+Braine-l%27Alleud" target="_blank" rel="noopener">Ouvrir l'itinéraire</a>
+      </div>
+      <dl class="hours">
+        <div><dt>Crèche</dt><dd>Lundi au vendredi, dépôt et reprise 7h–10h · 12h–13h · 16h–18h</dd></div>
+        <div><dt>Pension</dt><dd>7 jours sur 7</dd></div>
+        <div><dt>Cours collectifs</dt><dd>Samedi et dimanche, 9h–12h</dd></div>
+        <div><dt>Parc</dt><dd>Mercredi 10h–18h · samedi 12h–18h</dd></div>
+        <div><dt>Agility</dt><dd>Mercredi 18h30–19h30</dd></div>
+      </dl>
+    </div>
+    <div class="ph ph-blue ct-ph" style="--ar:21/8"><span>Photo · la façade du centre, ou une carte</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="app">
+      <p class="app-title">L'app Dog's Factory</p>
+      <div class="app-stores">
+        <!-- TODO : remplacer href="#" par les vrais liens des stores -->
+        <a class="store" href="#" aria-label="Télécharger dans l'App Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+          <span><small>Télécharger dans l'</small>App Store</span>
+        </a>
+        <a class="store" href="#" aria-label="Disponible sur Google Play">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 1.6c-.5.3-.8.8-.8 1.500v17.800c0 .7.300 1.200.800 1.500l10-10.400zM15.300 13.100l2.900 3-11.800 6.700zM15.300 10.900 6.400 1.200l11.800 6.700zM19.300 8.500l2.500 1.400c1 .6 1 1.600 0 2.200l-2.500 1.400-3-3.100z"/></svg>
+          <span><small>Disponible sur</small>Google Play</span>
+        </a>
+      </div>
+    </div>
+    <div class="foot-row">
+      <nav aria-label="Pied de page">
+        <a href="#services">Services</a>
+        <a href="#visite">Première visite</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="https://fr-fr.facebook.com/dogsfactory1420/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/dogsfactory/?hl=fr" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p>© <span id="year">2026</span> Dog's Factory</p>
+    </div>
+  </div>
+  <p class="foot-mark" aria-hidden="true">Dog's Factory</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

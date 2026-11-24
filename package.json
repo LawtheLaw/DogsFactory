@@ -1,0 +1,14 @@
+{
+  "name": "dogs-factory",
+  "private": true,
+  "description": "Propositions de refonte du site Dog's Factory",
+  "scripts": {
+    "v3": "vite site-v3 --port 4173",
+    "v4": "vite site-v4 --port 4174",
+    "v5": "vite site-v5 --port 4175",
+    "v6": "vite site-v6 --port 4176"
+  },
+  "devDependencies": {
+    "vite": "8.3.7"
+  }
+}

@@ -1,0 +1,15 @@
+# système / outils
+.DS_Store
+node_modules/
+.vite/
+.claude/
+.taste-skill/
+
+# anciens brouillons et sources lourdes (gardés en local seulement)
+/web/
+/taste-build/
+/Dogs/
+/brand/
+/design/
+/img/
+/Dogs Branding img/
